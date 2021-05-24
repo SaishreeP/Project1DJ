@@ -1,6 +1,6 @@
 
 <html>
-    <body >
+    <body bgcolor="green" >
         <form action="sample">
 
           <input type="time">
@@ -19,6 +19,11 @@
             <input type="range">
 
             <button type="submit">Register</button>
+            <input
+               type="reset"
+               placeholder="Reset"
+               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+               required> <br><br>
 
         </form>
     </body>
