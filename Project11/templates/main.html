@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        th,td
+        {
+            border-color:blue;
+            border-collapse:collapse;
+            padding:2px;
+            border-width:2px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>LOGIN PAGE</title>
+</head>
+<body>
+<form method="post" action="/loginCheck/">
+    {%  csrf_token %}
+    <table align="center" border="2" height="25%">
+        <tr>
+            <th colspan="2"> Login page </th>
+        </tr>
+        <tr>
+            <td> Username </td>
+            <td> <input type="text" placeholder="Username" required name="t1"></td>
+        </tr>
+        <tr>
+            <td> Password </td>
+            <td> <input type="text" placeholder="Password" required name="t2"></td>
+        </tr>
+        <tr>
+            <th colspan="2"> <button type="submit"> Login </button></th>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>

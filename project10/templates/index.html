@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> welcome to sathya </h1>
+
+<form method = "post" action = "/register/">
+
+    {% csrf_token %}
+
+    <input type="text" placeholder ="first name" name="t1" required >
+
+    <br><br>
+
+    <input type="text" placeholder="last name" name="t2">
+
+    <br><br>
+
+    <button type="submit"> Register </button>
+
+
+</form>
+
+
+</body>
+</html>
